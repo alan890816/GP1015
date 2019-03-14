@@ -7,6 +7,7 @@ gmt set PS_MEDIA A4
 # start gmt session
 gmt psxy -R0/1/0/1 -JX1c -T -K -P > $out_ps
   
+# write your gmt code here
 echo 0 0 | gmt psxy -R-100/100/-80/120 -JX10 -Sc5 -Ba20g10/a20g10 -P -O -K >> $out_ps
 echo 0 0 | gmt psxy -R-100/100/-80/120 -JX10 -Sc1 -Ba20g10/a20g10 -P -O -K >> $out_ps
 echo 0 -30 | gmt psxy -R-100/100/-80/120 -JX10 -Sc1 -Ba20g10/a20g10 -P -O -K >> $out_ps
