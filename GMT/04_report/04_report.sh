@@ -15,7 +15,7 @@ echo "121.29 22.7 M:4.6 Depth:5.9km" | gmt pstext -R -J -F+f,Helvetica-Bold,blac
 gmt psbasemap -R119/123/0/315 -Jx3/0.01 -B1 -X-0.5 -Y-5 -O -K >> $out_ps
 
 # Right map
-gmt psbasemap -R119/123/0/315 -Jx3/0.01 -B1 -X-0.5 -Y-5 -O -K >> $out_ps
+ gmt psbasemap -R119/123/0/315 -Jx3/0.01 -B1 -X-0.5 -Y-5 -O -K >> $out_ps
 
 # end gmt session
 gmt psxy -R -J -O -T >> $out_ps
